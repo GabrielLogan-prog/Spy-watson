@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zappecom Consultas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Baby Watson</div>
+        <div class="buttons">
+            <button onclick="navigateTo('index.html')" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-[6px] hover:text-white hover:bg-green-600 rounded-lg text-sm bg-green-600 text-green-100">Dashboard</button>
+            <button onclick="navigateTo('consultas.html')" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-[6px] hover:text-white hover:bg-green-600 rounded-lg text-sm bg-green-600 text-green-100">Consultas</button>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <h1>Consultas</h1>
+        <p>Esta página está em branco e será editada posteriormente.</p>
+    </div>
+    <header>
+        <h1>Relatório de Empresas</h1>
+    </header>
+    <div class="search-container">
+        <button id="search-button">Pesquisar Empresas</button>
+    </div>
+    <main id="companies-container">
+        <!-- Company data will be inserted here by JavaScript -->
+    </main>
+    <script src="consulta.js"></script>
+</body>
+</html>
