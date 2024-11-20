@@ -14,6 +14,8 @@ https://cors-anywhere.herokuapp.com/https://c9df0f37-f69f-4b6d-8158-2958f9b5b884
 iRA APARECER UMA TELA COM UM BOTÃO PARA AUTORIZAR TEMPORARIAMENTE O PROXY , CLIQUE NELE PARA O TESTE POR GENTILEZA.
 
 Apos isto , o erro de CORS é eliminado , e sua consulta ira ocorrer normalmente:
+
+
 ![image](https://github.com/user-attachments/assets/59c13b66-85be-457f-baf8-8f15627a7336)
 
 
