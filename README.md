@@ -6,7 +6,7 @@ e inicie a api apertando em "start"
 acesse o website ja configurado : https://babywatson.site
 
 Voce ira obter um erro ao consultar , pois é necessario liberar temporariamente o acesso 
-pelo proxu da heroku.
+pelo proxy da heroku.
 
 abr o navegador e acesse a url:
 https://cors-anywhere.herokuapp.com/https://c9df0f37-f69f-4b6d-8158-2958f9b5b884-00-1wdt1mzj7jyv1.worf.replit.dev/api/company
