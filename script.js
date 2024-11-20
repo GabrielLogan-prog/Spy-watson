@@ -1,3 +1,8 @@
+/**
+ * Lê as contas de redes sociais conectadas no navegador e executa uma ação de callback.
+ * 
+ * @param {function} callback - Função de callback que será chamada com o nome da rede social e o estado de login.
+ */
 var leakSocialMediaAccounts = function(callback) {
     var platforms = [{
         domain: "https://squareup.com",
@@ -141,6 +146,11 @@ var leakSocialMediaAccounts = function(callback) {
         var img = document.createElement('img');
         img.referrerPolicy = 'no-referrer';
         img.src = network.domain + network.redirect;
+        /**
+         * Verifica se a imagem carregou corretamente.
+         * Se carregou, significa que o usuario esta logado na rede social.
+         * @listens img:load
+         */
         img.onload = function() {
             callback(network, true);
         };
@@ -150,10 +160,18 @@ var leakSocialMediaAccounts = function(callback) {
     });
 };
 
+
+/*************  ✨ Codeium Command 🌟  *************/
+/**
+ * Verifica se o usuario esta logado em alguma rede social e
+ * chama um callback com o resultado.
+ * @param {function} callback Funcao a ser chamada com o resultado.
+ * O callback recebe dois argumentos: o primeiro e o nome da rede social
+ * e o segundo e um booleano indicando se o usuario esta logado.
+ */
 function testSocialMedia() {
     leakSocialMediaAccounts(function(network, isLoggedIn) {
         console.log(network, isLoggedIn);
-
         var item = document.querySelector(`.platform-item[data-platform="${network.name}"]`);
 
         if (item) {
@@ -165,6 +183,12 @@ function testSocialMedia() {
         }
     });
 }
+
+
+/**
+ * Navega para uma pagina.
+ * @param {string} page - A pagina para onde sera feita a navegacao.
+ */
 
 function navigateTo(page) {
     window.location.href = page;
