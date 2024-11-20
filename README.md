@@ -1,7 +1,7 @@
 Melhoria do spy browser e baby watson
 
 1- Va na api do Replit fornecida pelo gestor (A,A)
-2 inicie a api apertando em "start"
+e inicie a api apertando em "start"
 
 acesse o website ja configurado : https://babywatson.site
 
